@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <!-- Required meta tags -->
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+
+        <!-- Bootstrap CSS -->
+        <link
+            rel="stylesheet"
+            href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+            integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk"
+            crossorigin="anonymous"
+        />
+
+        <title>Hello, world!</title>
+        <link rel="stylesheet" href="style.css" />
+		<!-- Go to www.addthis.com/dashboard to customize your tools -->
+<script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-5f1a816b348d41d9"></script>
+    </head>
+
+    <body>
+        <nav class="navbar navbar-expand-lg navbar-light nav-distance">
+            <a class="navbar-brand" href="#">와꾸 테스트</a>
+            <button
+                class="navbar-toggler"
+                type="button"
+                data-toggle="collapse"
+                data-target="#navbarNav"
+                aria-scontrols="navbarNav"
+                aria-expanded="false"
+                aria-label="Toggle navigation"
+            >
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Features</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Pricing</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true"
+                            >Disabled</a
+                        >
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        <section class="section">
+            <h1 class="title">인공지능 와꾸 테스트</h1>
+            <h2 class="subtitle">나는 어떤 와꾸를 가지고 있나?</h2>
+        </section>
+        <section class="youtube">
+            <div class="container mt-5 youtube-cover d-flex flex-row-reverse">
+                <img src="img/youtube-copy.jpg" alt="" class="youtube-icon" />
+                <a href="" class="youtube-link">By 천은탁 Wet Socks On The Laundry Channel</a>
+            </div>
+        </section>
+
+        <script
+            class="jsbin"
+            src="https://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"
+        ></script>
+        <div class="container file-upload">
+            <div class="image-upload-wrap" style="width: 65%; margin: 0 auto;">
+                <input
+                    class="file-upload-input"
+                    type="file"
+                    onchange="readURL(this);"
+                    accept="image/*"
+                />
+                <div class="drag-text">
+                    <img src="img/upload.jpg" class="mt-5 pt-5 upload" style="width: 20%;" />
+                    <h3 class="mb-5 pb-5 pt-4 upload-text">
+                        우리 할무니도 너부다 업루드 촬하겠다 - 니 와꾸사진 업로드 해라!
+                    </h3>
+                </div>
+            </div>
+            <div class="file-upload-content">
+                <img class="file-upload-image" id="face-image" src="#" alt="your image" />
+				<p class="result-message">
+				</p>	
+				
+                <!-- Go to www.addthis.com/dashboard to customize your tools -->
+                <div class="addthis_inline_share_toolbox"></div>
+            
+                <div id="label-container"></div>
+                <div class="image-title-wrap">
+                    <button type="button" onclick="removeUpload()" class="remove-image">
+                        Remove <span class="image-title">Uploaded Image</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <div id="webcam-container"></div>
+        <div id="label-container"></div>
+        <div id="disqus_thread"></div>
+        <script>
+            /**
+             *  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
+             *  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables*/
+            /*
+var disqus_config = function () {
+this.page.url = PAGE_URL;  // Replace PAGE_URL with your page's canonical URL variable
+this.page.identifier = PAGE_IDENTIFIER; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+};
+*/
+            (function () {
+                // DON'T EDIT BELOW THIS LINE
+                var d = document,
+                    s = d.createElement('script');
+                s.src = 'https://madquail.disqus.com/embed.js';
+                s.setAttribute('data-timestamp', +new Date());
+                (d.head || d.body).appendChild(s);
+            })();
+        </script>
+        <noscript
+            >Please enable JavaScript to view the
+            <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript
+        >
+
+        <!-- Optional JavaScript -->
+        <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+        <script
+            src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+            integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+            crossorigin="anonymous"
+        ></script>
+        <script
+            src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+            integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+            crossorigin="anonymous"
+        ></script>
+        <script
+            src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+            integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
+            crossorigin="anonymous"
+        ></script>
+        <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@1.3.1/dist/tf.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/@teachablemachine/image@0.8/dist/teachablemachine-image.min.js"></script>
+        <script>
+            function readURL(input) {
+                if (input.files && input.files[0]) {
+                    var reader = new FileReader();
+
+                    reader.onload = function (e) {
+                        $('.image-upload-wrap').hide();
+
+                        $('.file-upload-image').attr('src', e.target.result);
+                        $('.file-upload-content').show();
+
+                        $('.image-title').html(input.files[0].name);
+                    };
+
+                    reader.readAsDataURL(input.files[0]);
+                    init().then(() => {
+                        console.log('hello');
+                        predict();
+                    });
+                } else {
+                    removeUpload();
+                }
+            }
+
+            function removeUpload() {
+                $('.file-upload-input').replaceWith($('.file-upload-input').clone());
+                $('.file-upload-content').hide();
+                $('.image-upload-wrap').show();
+            }
+            $('.image-upload-wrap').bind('dragover', function () {
+                $('.image-upload-wrap').addClass('image-dropping');
+            });
+            $('.image-upload-wrap').bind('dragleave', function () {
+                $('.image-upload-wrap').removeClass('image-dropping');
+            });
+        </script>
+        <script type="text/javascript">
+            // More API functions here:
+            // https://github.com/googlecreativelab/teachablemachine-community/tree/master/libraries/image
+
+            // the link to your model provided by Teachable Machine export panel
+            const URL = 'https://teachablemachine.withgoogle.com/models/tXVP9yGBi/';
+
+            let model, webcam, labelContainer, maxPredictions;
+
+            // Load the image model and setup the webcam
+            async function init() {
+                const modelURL = URL + 'model.json';
+                const metadataURL = URL + 'metadata.json';
+
+                // load the model and metadata
+                // Refer to tmImage.loadFromFiles() in the API to support files from a file picker
+                // or files from your local hard drive
+                // Note: the pose library adds "tmImage" object to your window (window.tmImage)
+                model = await tmImage.load(modelURL, metadataURL);
+                maxPredictions = model.getTotalClasses();
+
+                labelContainer = document.getElementById('label-container');
+                for (let i = 0; i < maxPredictions; i++) {
+                    // and class labels
+                    labelContainer.appendChild(document.createElement('div'));
+                }
+            }
+
+            // run the webcam image through the image model
+           async function predict() {
+                // predict can take in an image, video or canvas html element
+                var image = document.getElementById('face-image');
+                const prediction = await model.predict(image, false);
+                prediction.sort((a, b) => parseFloat(b.probability) - parseFloat(a.probability));
+				console.log(prediction[0].className)
+				var resultMessage;
+				switch (prediction[0].className) {
+					case "원빈,정우성,그리고 님이세요":
+						resultMessage = "원빈,정우성,그리고 님이세요"
+						break;
+					case "부지런히 일하는당신 섹쉬....":
+						resultMessage = "부지런히 일하는당신 섹쉬...."
+						break;
+				case "풍차는 그가 돌린다...바람둥이":
+						resultMessage = "풍차는 그가 돌린다...바람둥이"
+						break;
+				case "혹시...나사에서 일하세요?":
+						resultMessage = "혹시...나사에서 일하세요?"
+						break;
+				case "걍 졸라 예쁨":
+						resultMessage = "걍 졸라 예쁨"
+						break;
+				case "짱 커요미":
+						resultMessage = "짱 커요미"
+						break;
+				case "신사임당급 청순함":
+						resultMessage = "신사임당급 청순함"
+						break;
+				case "이것은 오징어 인가 외계인 인가":
+						resultMessage = "이것은 오징어 인가 외계인 인가"
+						break;
+				case "엄지발가락처럼 생김":
+						resultMessage = "엄지발가락처럼 생김"
+						break;
+					default:	
+						resultMessage = "와꾸 알수없음"
+				}
+			$('.result-message').html(resultMessage);
+                for (let i = 0; i < maxPredictions; i++) {
+                    const classPrediction =
+                        prediction[i].className + ': ' + prediction[i].probability.toFixed(2) + '%';
+                    labelContainer.childNodes[i].innerHTML = classPrediction;
+                }
+            }
+        </script>
+    </body>
+    <!--	Copyright (c) 2020 by Aaron Vanston (https://codepen.io/aaronvanston/pen/yNYOXR)
+
+Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+--></html>
